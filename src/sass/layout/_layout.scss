@@ -1,0 +1,79 @@
+
+// events booking
+.form {
+  &__headings {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  &__h1 {
+    padding: 10px 0;
+  }
+
+  &__image {
+    text-align: center;
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item {
+    @extend .flex-row;
+    padding: 5px 0;
+  }
+
+  &__input {
+    width: 70%;
+    padding: 5px 0;
+  }
+
+  &__select {
+    justify-self: flex-start;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px auto;
+  }
+
+  &__btn {
+    padding: 5px 30px;
+    cursor: pointer;
+  }
+
+  &__submit {
+    background: $orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__cancel {
+    border: 1px solid $orange;
+    color: $orange;
+    border-radius: 5px;
+  }
+
+  &__error {
+    color: red;
+    font-size: small;
+    text-align: right;
+  }
+
+  &__disabled {
+    background: grey;
+    pointer-events: none;
+    cursor: pointer;
+  }
+}

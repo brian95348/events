@@ -1,0 +1,17 @@
+// File : main.scss (Default Theme)
+
+// All "Base" specific SASS partials
+@import "base/_base.scss"; // All "Layout" specific SASS partials
+
+// All "LAYOUT" specific SASS partials
+@import 'layout/_layout.scss';
+
+// All "Module" specific SASS partials
+@import "module/_modules.scss";
+
+// All "Responsive" specific SASS partials
+@import "./responsive/ipad-Mini.scss";
+@import "./responsive/macBook.scss";
+
+// utilies need to be at the end because of specificity
+// @import 'base/utilities'

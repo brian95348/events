@@ -1,0 +1,148 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// should be under LAYOUT category
+.body-container {
+  padding-bottom: 50px;
+}
+
+// nav
+.nav {
+  background: $base-color;
+  position: relative;
+
+  &__container {
+    @extend .flex-row;
+    padding: 20px 0;
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__dropdown-wrapper {
+    position: absolute;
+    top: 87px;
+    z-index: 1;
+    background: $base-color;
+    border: none;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+  }
+
+  &__dropdown {
+    // background: inherit;
+    border: none;
+    // height: 0;
+  }
+
+  &__link {
+    padding: 20px 0;
+    margin: 15px auto;
+  }
+
+  &__active {
+    border-bottom: 2px solid #66ffcc;
+  }
+}
+
+// search-bar
+.search-bar {
+  background: rgb(223, 220, 220);
+  padding: 15px 0;
+
+  &__container {
+    border: $border-styling;
+    border-radius: 5px;
+    padding: 15px 0;
+    background: white;
+  }
+
+  &__content {
+    @extend .flex-row;
+  }
+
+  &__input {
+    border: none;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+}
+
+// Spinner
+.spinner {
+  text-align: center;
+  height: calc(100vh - 87px);
+  display: flex;
+  align-items: center;
+}
+
+// events view
+.events {
+  &__header {
+    margin: 30px 0 10px auto;
+  }
+
+  &__h1 {
+    font-weight: bolder;
+  }
+}
+
+// event component
+.event {
+  border-bottom: $border-styling;
+
+  &__container {
+    padding: 20px 0;
+  }
+
+  &__image {
+    display: none;
+  }
+
+  &__content {
+    @extend .flex-row;
+  }
+
+  &__p {
+    padding: 5px 0;
+  }
+
+  &__tickets {
+    color: #ff9933;
+    font-weight: bold;
+  }
+
+  &__icon {
+    width: 5%;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+
+  &__disabled {
+    pointer-events: none;
+    cursor: none;
+  }
+
+  &__note {
+    display: none;
+  }
+}
+
+.modal {
+  background: #1A4E71;
+  color: white;
+  text-align: center;
+  margin: 5px auto;
+  width: 20%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

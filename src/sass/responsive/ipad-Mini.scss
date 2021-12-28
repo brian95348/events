@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px) {
+  .event {
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 0 4px 4px -2px gray;
+
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-items: center;
+      padding: 20px 0;
+      width: 95%;
+      margin: auto;
+    }
+
+    &__image {
+      display: block;
+      height: 100%;
+    }
+
+    &__pic {
+      width: 100px;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  // events booking
+  .form {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    &__text {
+      width: 80%;
+    }
+  }
+}
